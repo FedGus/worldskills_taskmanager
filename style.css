@@ -1,0 +1,64 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); 
+  	grid-template-rows: 100px 1fr 50px; 
+	grid-column-gap: 40px; 
+
+  	background-color: #ebebeb;
+  	background-image: url('img/worldskills-2.png');
+  	background-repeat: no-repeat;
+  	background-position: bottom right;
+  	background-size: 60%;
+}
+
+header {
+	grid-column: 1 / 4;
+	display: grid;
+   	grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+	height: 70px;
+}
+
+h2 {
+	display: inline-block;
+}
+
+input {
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid lightgrey;
+}
+
+button {
+	border: 0;
+	background: linear-gradient(to top, grey, darkgrey);
+	padding: 10px;
+	height: 35px;
+	border-radius: 5px;
+	color: white;
+}
+
+section {
+	border: 1px dashed grey;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.stick {
+	width: 10vw;
+	height: 10vw;
+	background-color: #fffe91;
+	margin: 20px auto;
+	box-shadow: 2px 2px 3px darkgrey;
+}
+
+footer {
+	grid-column: 1 / 4;
+}
