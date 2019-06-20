@@ -1,7 +1,7 @@
 body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); 
-  	grid-template-rows: 100px 1fr 50px; 
+  	grid-template-rows: 150px 1fr 50px; 
 	grid-column-gap: 40px; 
 
   	background-color: #ebebeb;
@@ -57,6 +57,41 @@ h1 {
 	background-color: #fffe91;
 	margin: 20px auto;
 	box-shadow: 2px 2px 3px darkgrey;
+	padding: 1vw;
+	position: relative;
+}
+
+h4, p {
+	margin: 0;
+	font-size: 1vw;
+}
+
+
+
+.edit, .delete {
+	width: 2vw;
+	height: 2vw;
+	border-radius: 1vw;
+	background: linear-gradient(to top, grey, darkgrey);
+	position: absolute;
+	padding: 0;
+}
+
+.edit {
+	top: 8vw;
+	right: 4vw;
+}
+.edit img {
+	width: 1vw;
+}
+
+.delete img {
+	width: 1vw;
+}
+
+.delete {
+	top: 8vw;
+	right: 1vw;
 }
 
 footer {
