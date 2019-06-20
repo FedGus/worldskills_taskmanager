@@ -3,12 +3,13 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" media="print" href="print.css" >
 </head>
 <body>
 <header>
 	<div><img class="logo" src="img/wsr.png">
 		<h2>Task Manager</h2><br>
-		<input type="text" name="" placeholder="Task description"> <button> + Add task </button>
+		<input type="text" v-on:input="changeName" placeholder="Task description"> <button> + Add task </button>
 	</div>
 	<div></div>
 	
@@ -18,7 +19,7 @@
 	<h1>Backlog <span>(1)</span></h1>
 	<div class="stick">
 		<h4>Task #35</h4>
-		<p>Prepare the skills categories competition areas</p>
+		<p>{{ name }}</p>
 		<button class="edit"><img src="img/write.png"></button>
 		<button class="delete"><img src="img/cross.png"></button>
 	</div>
@@ -64,4 +65,6 @@
 	
 </footer>
 </body>
+<script src="js/vue.js"></script>
+<script src="js/script.js"></script>
 </html>
