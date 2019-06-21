@@ -9,7 +9,7 @@
 <header>
 	<div><img class="logo" src="img/wsr.png">
 		<h2>Task Manager</h2><br>
-		<input type="text" v-on:input="changeName" placeholder="Task description"> <button> + Add task </button>
+		
 	</div>
 	<div>
 		<a href="index.html">Обычная версия сайта</a>
@@ -17,13 +17,14 @@
 	
 </header>
 
-<section>
-	<h1>Backlog <span>(1)</span></h1>
-	<div class="stick">
+<section id="app">
+	<h1><input type="text" id="itemForm" placeholder="Task description"> <button v-on:click="addItem" type="button"> + Add task </button></h1>
+
+	<div v-for="item,index in items" class="stick">
 		<h4>Task #35</h4>
-		<p>{{ name }}</p>
+		<p>{{ item.text }}</p>
 		<button class="edit"><img src="img/write.png"></button>
-		<button class="delete"><img src="img/cross.png"></button>
+		<button v-on:click="deleteItem(index)" class="delete"><img src="img/cross.png"></button>
 	</div>
 </section>
 <section>
