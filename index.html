@@ -23,7 +23,7 @@
 		<h4>Task #35</h4>
 		<p>{{ item.text }}</p>
 		<button class="edit"><img src="img/write.png"></button>
-		<button v-on:click="deleteItem(index)" class="delete"><img src="img/cross.png"></button>
+		<button v-on:click="deleteItem(index)" class="delete" v-bind:title="message"><img src="img/cross.png"></button>
 	</div>
 </section>
 <section>
@@ -67,6 +67,8 @@
 	
 </footer>
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
 <script src="js/vue.js"></script>
 <script src="js/script.js"></script>
 </html>

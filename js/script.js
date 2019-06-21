@@ -1,6 +1,7 @@
 var app = new Vue ({
 	el: '#app',
 	data: {
+		message: 'Delete item ',
 		items: [
 		{ text: "New item" }
 		]
@@ -22,3 +23,8 @@ var app = new Vue ({
 	}
 
 });
+
+
+$('section').sortable({
+	connectWith: 'section'
+  }).disableSelection();
