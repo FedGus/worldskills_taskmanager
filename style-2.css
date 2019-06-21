@@ -16,24 +16,44 @@ header {
 	height: 70px;
 }
 
+.title {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 1.3vw;
+}
+
+
 h2 {
 	display: inline-block;
 }
 
 input {
-	height: 35px;
+	height: 37px;
 	border-radius: 5px;
 	border: 1px solid black;
+	font-size: 1.3vw;
+}
+
+input[placeholder] {
+	padding-left: 15px;
 }
 
 button {
 	border: 1px solid black;
 	background: white;
 	padding: 10px;
-	height: 35px;
+	height: 40px;
 	border-radius: 5px;
 	color: black;
+	font-size: 1vw;
 }
+
+.info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
 
 section {
 	border: 1px dashed grey;

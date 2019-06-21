@@ -22,14 +22,21 @@ header {
 	height: 70px;
 }
 
-h2 {
-	display: inline-block;
+.title {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 1.3vw;
 }
 
 input {
 	height: 35px;
+	width: 60%;
 	border-radius: 5px;
 	border: 1px solid lightgrey;
+}
+
+input[placeholder] {
+	padding-left: 15px;
 }
 
 button {
@@ -41,8 +48,23 @@ button {
 	color: white;
 }
 
+.info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info img {
+	width: 2vw;
+	margin: 0 15px 0 15px;
+}
+
 a {
-	font-size: 24px;
+	font-size: 1vw;
+}
+
+span {
+	font-size: 1vw;
 }
 
 section {
