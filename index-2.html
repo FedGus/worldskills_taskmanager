@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" media="print" href="print.css" >
 </head>
 <body>
-<header>
+<header role="rowheader">
 	<div class="title"><img class="logo" src="img/wsr.png">
 		<h2>Task Manager</h2><br>
 		
@@ -20,7 +20,7 @@
 <section id="app">
 	<h1><input type="text" id="itemForm" placeholder="Task description"> <button v-on:click="addItem" type="button"> + Add task </button></h1>
 
-	<div v-for="item,index in items" class="stick">
+	<div v-for="item,index in items" class="stick" role="note">
 		<h4>Task #35</h4>
 		<p>{{ item.text }}</p>
 		<button class="edit"><img src="img/write.png"></button>
@@ -29,19 +29,19 @@
 </section>
 <section>
 	<h1>In-Progress <span>(3)</span></h1>
-	<div class="stick">
+	<div class="stick" role="note">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
 		<button class="edit"><img src="img/write.png"></button>
 		<button class="delete"><img src="img/cross.png"></button>
 	</div>
-	<div class="stick">
+	<div class="stick" role="note">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
 		<button class="edit"><img src="img/write.png"></button>
 		<button class="delete"><img src="img/cross.png"></button>
 	</div>
-	<div class="stick">
+	<div class="stick" role="note">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
 		<button class="edit"><img src="img/write.png"></button>
@@ -50,13 +50,13 @@
 </section>
 <section>
 	<h1>Done <span>(2)</span></h1>
-	<div class="stick">
+	<div class="stick" role="note">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
 		<button class="edit"><img src="img/write.png"></button>
 		<button class="delete"><img src="img/cross.png"></button>
 	</div>
-	<div class="stick">
+	<div class="stick" role="note">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
 		<button class="edit"><img src="img/write.png"></button>

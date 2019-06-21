@@ -30,7 +30,7 @@ header {
 
 input {
 	height: 35px;
-	width: 60%;
+	width: 50%;
 	border-radius: 5px;
 	border: 1px solid lightgrey;
 }
@@ -76,6 +76,7 @@ section {
 
 h1 {
 	text-align: center;
+	font-size: 2vw;
 }
 
 .stick {
