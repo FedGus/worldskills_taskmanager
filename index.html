@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<title></title>
+	<title>WorldSkills Task Manager</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" media="print" href="print.css" >
 </head>
 <body>
 <header>
-	<div class="title"><img class="logo" src="img/wsr.png">
+	<div class="title"><img class="logo" src="img/wsr.png" alt="worldskills logo">
 		<h2>Task Manager</h2><br>
 	</div>
 	<div class="info">
-		<img src="img/glasses.png">
+		<img src="img/glasses.png" alt="vesion for blind">
 		<a href="index-2.html">Version for the blind</a>
-		<img src="img/info.png">
+		<img src="img/info.png" alt="info">
 		<span>Add tasks using the register form and drag them trough the status columns. New tasks will automatically fill in the "Backlog" column.</span>
 	</div>
 	
 </header>
 
 <section id="app">
-	<h1><input type="text" id="itemForm" placeholder="Task description"> <button v-on:click="addItem" type="button"> + Add task </button></h1>
+	<h1><input type="text" id="itemForm" placeholder="Task description"> <button type="button" v-on:click="addItem"> + Add task </button></h1>
 
-	<div v-for="item,index in items" class="stick">
+	<div class="stick" v-for="item,index in items">
 		<h4>Task #35</h4>
 		<p>{{ item.text }}</p>
-		<button class="edit"><img src="img/write.png"></button>
-		<button v-on:click="deleteItem(index)" class="delete" v-bind:title="message"><img src="img/cross.png"></button>
+		<button class="edit"><img src="img/write.png" alt="edit task"></button>
+		<button class="delete" v-on:click="deleteItem(index)" v-bind:title="message"><img src="img/cross.png" alt="delete task"></button>
 	</div>
 </section>
 <section>
@@ -34,20 +35,20 @@
 	<div class="stick">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
-		<button class="edit"><img src="img/write.png"></button>
-		<button class="delete"><img src="img/cross.png"></button>
+		<button class="edit"><img src="img/write.png" alt="edit task"></button>
+		<button class="delete"><img src="img/cross.png" alt="delete task"></button>
 	</div>
 	<div class="stick">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
-		<button class="edit"><img src="img/write.png"></button>
-		<button class="delete"><img src="img/cross.png"></button>
+		<button class="edit"><img src="img/write.png" alt="edit task"></button>
+		<button class="delete"><img src="img/cross.png" alt="delete task"></button>
 	</div>
 	<div class="stick">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
-		<button class="edit"><img src="img/write.png"></button>
-		<button class="delete"><img src="img/cross.png"></button>
+		<button class="edit"><img src="img/write.png" alt="edit task"></button>
+		<button class="delete"><img src="img/cross.png" alt="delete task"></button>
 	</div>
 </section>
 <section>
@@ -55,14 +56,14 @@
 	<div class="stick">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
-		<button class="edit"><img src="img/write.png"></button>
-		<button class="delete"><img src="img/cross.png"></button>
+		<button class="edit"><img src="img/write.png" alt="edit task"></button>
+		<button class="delete"><img src="img/cross.png" alt="delete task"></button>
 	</div>
 	<div class="stick">
 		<h4>Task #35</h4>
 		<p>Prepare the skills categories competition areas</p>
-		<button class="edit"><img src="img/write.png"></button>
-		<button class="delete"><img src="img/cross.png"></button>
+		<button class="edit"><img src="img/write.png" alt="edit task"></button>
+		<button class="delete"><img src="img/cross.png" alt="delete task"></button>
 	</div>
 </section>
 
